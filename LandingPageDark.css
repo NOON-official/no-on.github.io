@@ -1,4 +1,4 @@
-﻿/*폰트*/
+/*폰트*/
 @font-face {
     font-family: 'Recipekorea'; /*h1~h2: 레코체*/
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Recipekorea.woff') format('woff');
@@ -19,12 +19,7 @@
     font-weight: normal;
     font-style: normal;
 }
-@font-face { /*footer 폰트*/
-    font-family: 'ONE-Mobile-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+
 strong{
     font-size: 16px;
     color: #000;
@@ -283,12 +278,10 @@ neon {
 }
 
 .faq {
-    
     justify-content: center;
 }
 
 .faq-container {
-    
     margin: auto;
     z-index: 1;
     margin-top: 2%;
@@ -298,12 +291,11 @@ neon {
     padding-bottom: 300px;
 }
 
-.chat-page {
+.chat-page{
     padding: 0 0 50px 0;
     color: #1C1C1C;
 }
 .faq-title {
-    padding-top: 75px;
     text-align: center;
     font-family: 'Recipekorea';
 }
@@ -397,20 +389,16 @@ neon {
 }
 footer {
     background-color: lightgray;
-    height: auto;
+    height: 5%;
+
 }
-.footer-box {
-    padding-left: 100px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-footer p {
-    
-    font-family: 'ONE-Mobile-Regular';
-    color: #585656 !important;
-    top: 50%;
-    left: 50%;
-    line-height: 180%;
-}
+
+    footer p {
+        color: #1C1C1C !important;
+        top: 50%;
+        left: 50%;
+        padding: 2px;
+        margin-left: 10px;
+    }
 
 
