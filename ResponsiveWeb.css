@@ -1,0 +1,584 @@
+﻿/*반응형으로 만들기*/
+/* 스마트폰*/
+@media (max-width: 991px) {
+    html {
+        scroll-behavior: smooth;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    section {
+        -ms-overflow-style: none;
+        overflow: hidden;
+        width: auto;
+        height: auto;
+        padding: 40px;
+        padding-bottom: 150px; /*120px*/
+    }
+
+    .sec {
+        height: 80%;
+        background-size: cover;
+    }
+
+
+    header {
+        padding-top: 50px;
+        padding: 20px 40px;
+    }
+
+        header .logo {
+            position: relative;
+            max-width: 150px;
+        }
+
+        /*메뉴 반응형*/
+        header ul {
+            position: absolute;
+            top: 8vh;
+            right: 0;
+            left: 0;
+            width: auto;
+            transform: translateX(0%);
+            height: auto;
+            flex-direction: column;
+            align-items: center;
+            visibility: hidden;
+            opacity: 0.5;
+        }
+
+            header ul li {
+                background: #1C1C1C;
+                opacity: 0.8;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                float: right;
+                right: 0;
+            }
+
+            header ul.active { /*메뉴바 불러오려면*/
+                visibility: visible;
+                opacity: 1;
+            }
+
+            header ul li a {
+                display: inline-block;
+                font-weight: 200;
+                margin-left: 0;
+                text-decoration: none;
+                font-size: 2em;
+                margin: 10px 0;
+            }
+
+                header ul li a:hover {
+                    border-radius: 40px;
+                    color: #E0F140;
+                    cursor: pointer;
+                }
+
+    .toggleMenu {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url('images/menu.png');
+        background-position: center;
+        background-size: 70px;
+        background-repeat: no-repeat;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+        .toggleMenu active {
+            background: url('images/close.png');
+            background-position: center;
+            background-size: 25px;
+            background-repeat: no-repeat;
+            filter: invert(1); /*x를 표시*/
+        }
+
+    .mainbox h1 {
+        width: 100%;
+        font-size: 4em;
+        text-align: center;
+    }
+
+    .solution {
+        height: 100vh;
+    }
+
+    .content {
+        flex-direction: column;
+        margin-top: 0px;
+        height: 100%;
+        padding-top: 20%;
+    }
+
+    .text-title img {
+        width: 200px;
+    }
+
+    .text-title {
+        align-content: center;
+    }
+
+    .content .textbox {
+        width: 100%;
+        margin-top: 0;
+        padding-right: 20px;
+        padding-bottom: 50px;
+        margin-left: 0;
+    }
+
+        .content .textbox img {
+            width: 250px;
+            margin-right: 20px;
+        }
+
+        .content .textbox h2 {
+            font-size: 4em;
+        }
+
+        .content .textbox p {
+            font-size: 1.8em;
+        }
+
+        .content .textbox a {
+            font-size: 1.8em;
+            padding: 8px 15px;
+        }
+
+    .content .imgbox {
+        padding-top: 100px;
+        display: flex;
+        justify-content: center;
+        padding-right: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+        .content .imgbox img {
+            max-width: 800px;
+            min-height: 500px;
+        }
+
+    .tools {
+        height: 100vh;
+    }
+
+    .service-title {
+        max-height: 300px;
+        padding-top: 25%;
+    }
+
+        .service-title h2 {
+            font-size: 4em;
+            width: 100%;
+        }
+
+    .icons {
+        justify-content: space-between;
+    }
+
+    .icons_list {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 0px;
+        flex-wrap: wrap;
+        padding-top: 0;
+        padding-right: 0px;
+        padding-left: 0px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+
+        .icons_list ul {
+            padding-top: 10%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+            .icons_list ul li {
+                width: 300px;
+                height: 300px;
+                margin-bottom: 10%;
+            }
+
+                .icons_list ul li i {
+                    line-height: 100px;
+                }
+
+    .icons {
+        height: 40%;
+        width: 100%;
+    }
+
+    .details {
+        font-size: 2em;
+        color: #1C1C1C;
+        font-weight: 500;
+        margin-top: 0;
+    }
+
+    .faq {
+        min-height: 150vh;
+        padding-top: 40%;
+        padding-bottom: 40%;
+        background-color: #1C1C1C !important;
+    }
+
+    .faq-container {
+        height: 200%;
+        padding-top: 40%;
+        padding-bottom: 40%;
+    }
+
+    .faq-title{
+        padding-top: 25%;
+    }
+    .received-msg {
+        width: 92%;
+    }
+
+    .received-msg-inbox1 p, .received-msg-inbox2 p, .received-msg-inbox3 p {
+        padding: 20px;
+        min-width: 700px;
+        font-size: 2em;
+        line-height: 120%;
+    }
+
+    .outgoing-chats-msg {
+        width: 92%;
+        margin-left: 0;
+    }
+
+        .outgoing-chats-msg p {
+            padding: 20px;
+            width: auto;
+            font-size: 2em;
+            line-height: 150%;
+            padding-bottom: 20px;
+        }
+
+            .outgoing-chats-msg p br {
+                display: none !important;
+            }
+
+    footer {
+        width: auto;
+        padding: 40px;
+    }
+
+        footer p {
+            font-size: 1.5em;
+        }
+
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(5px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+}
+
+/*아이패드*/
+@media only screen and (max-device-width: 768px) and (max-device-width: 1024px) {
+    html {
+        scroll-behavior: smooth;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    section {
+        -ms-overflow-style: none;
+        overflow: hidden;
+        width: auto;
+        height: auto;
+        padding: 40px;
+        padding-bottom: 150px; /*120px*/
+    }
+
+    .sec {
+        height: 80%;
+        background-size: cover;
+    }
+
+
+    header {
+        padding-top: 50px;
+        padding: 20px 40px;
+    }
+
+        header .logo {
+            position: relative;
+            max-width: 150px;
+        }
+
+        /*메뉴 반응형*/
+        header ul {
+            position: absolute;
+            top: 8vh;
+            right: 0;
+            left: 0;
+            width: auto;
+            transform: translateX(0%);
+            height: auto;
+            flex-direction: column;
+            align-items: center;
+            visibility: hidden;
+            opacity: 0.5;
+        }
+
+            header ul li {
+                background: #1C1C1C;
+                opacity: 0.8;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                float: right;
+                right: 0;
+            }
+
+            header ul.active { /*메뉴바 불러오려면*/
+                visibility: visible;
+                opacity: 1;
+            }
+
+            header ul li a {
+                display: inline-block;
+                font-weight: 200;
+                margin-left: 0;
+                text-decoration: none;
+                font-size: 2em;
+                margin: 10px 0;
+            }
+
+                header ul li a:hover {
+                    border-radius: 40px;
+                    color: #E0F140;
+                    cursor: pointer;
+                }
+
+    .toggleMenu {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url('images/menu.png');
+        background-position: center;
+        background-size: 70px;
+        background-repeat: no-repeat;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+        .toggleMenu active {
+            background: url('images/close.png');
+            background-position: center;
+            background-size: 25px;
+            background-repeat: no-repeat;
+            filter: invert(1); /*x를 표시*/
+        }
+
+    .mainbox h1 {
+        width: 100%;
+        font-size: 4em;
+        text-align: center;
+    }
+
+    .solution {
+        height: 100vh;
+        width: 100%
+    }
+
+    .content {
+        width: 100%;
+        flex-direction: column;
+        margin-top: 0px;
+        height: 100%;
+        padding-top: 20%;
+    }
+
+    .text-title img {
+        width: 200px;
+    }
+
+    .text-title {
+        align-content: center;
+        font-size: 3em;
+    }
+
+    .content .textbox {
+        width: 100%;
+        margin-top: 0;
+        padding-right: 20px;
+        padding-bottom: 50px;
+        margin-left: 0;
+    }
+
+        .content .textbox img {
+            width: 150px;
+            margin-right: 20px;
+        }
+
+        .content .textbox h2 {
+            font-size: 4em;
+        }
+
+        .content .textbox p {
+            font-size: 1.8em;
+        }
+
+        .content .textbox a {
+            font-size: 1.8em;
+            padding: 8px 15px;
+        }
+
+    .content .imgbox {
+        padding-top: 100px;
+        display: flex;
+        justify-content: center;
+        padding-right: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+        .content .imgbox img {
+            max-width: 800px;
+            min-height: 500px;
+        }
+
+    .tools {
+        height: 100vh;
+    }
+
+    .service-title {
+        max-height: 300px;
+        padding-top: 25%;
+    }
+
+        .service-title h2 {
+            font-size: 4em;
+            width: 100%;
+        }
+
+    .icons {
+        justify-content: space-between;
+    }
+
+    .icons_list {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 0px;
+        flex-wrap: wrap;
+        padding-top: 0;
+        padding-right: 0px;
+        padding-left: 0px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+
+        .icons_list ul {
+            padding-top: 10%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+            .icons_list ul li {
+                width: 300px;
+                height: 300px;
+                margin-bottom: 10%;
+            }
+
+                .icons_list ul li i {
+                    line-height: 100px;
+                }
+
+    .icons {
+        height: 40%;
+        width: 100%;
+    }
+
+    .details {
+        font-size: 2em;
+        color: #1C1C1C;
+        font-weight: 500;
+        margin-top: 0;
+    }
+
+    .faq {
+        min-height: 150vh;
+        padding-top: 40%;
+        padding-bottom: 40%;
+        background-color: #1C1C1C !important;
+    }
+
+    .faq-container {
+        height: 200%;
+        padding-top: 40%;
+        padding-bottom: 40%;
+    }
+
+    .faq-title {
+        padding-top: 25%;
+    }
+
+    .received-msg {
+        width: 92%;
+    }
+
+    .received-msg-inbox1 p, .received-msg-inbox2 p, .received-msg-inbox3 p {
+        padding: 20px;
+        min-width: 700px;
+        font-size: 2em;
+        line-height: 120%;
+    }
+
+    .outgoing-chats-msg {
+        width: 92%;
+        margin-left: 0;
+    }
+
+        .outgoing-chats-msg p {
+            padding: 20px;
+            width: auto;
+            font-size: 2em;
+            line-height: 150%;
+            padding-bottom: 20px;
+        }
+
+            .outgoing-chats-msg p br {
+                display: none !important;
+            }
+
+    footer {
+        width: auto;
+        padding: 40px;
+    }
+
+        footer p {
+            font-size: 1.5em;
+        }
+
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(5px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+}
