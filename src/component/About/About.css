@@ -12,7 +12,9 @@
     align-items: center;
 }
 .symbol > img {
-    width: 330px;
+    width: 293px;
+    margin-right: 93px;
+
 }
 .vision-text > h2{
     font-size: 36px;

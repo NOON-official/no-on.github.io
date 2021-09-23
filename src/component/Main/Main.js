@@ -1,5 +1,5 @@
 import React from 'react';
-import Symbol from '../images/symbol.png';
+import Symbol from '../images/symbol.svg';
 import './Main.css';
 import '../../App.css';
 

@@ -1,0 +1,90 @@
+.contact-container{
+    background: #f9fafb;
+    height: 70vh;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.contact-image{
+    width:100%;
+    text-align: center;
+    display:inline-block;
+    flex-direction: row;
+}
+
+.contact-symbol, .contact-logo{
+    width: 92px;
+}
+.contact-image > p{
+    margin-bottom: 26px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.contact-logo{
+    margin-bottom: 49.5px;
+}
+
+.contact-form{
+    width: 100%;
+    float: left;
+}
+
+.contact-form{
+    display: flex;
+    align-content: center;
+    align-content: center;
+    justify-content: center;
+}
+.input-col-1{
+    margin-right: 10px;
+}
+
+.input-col-1 > input {
+    background: #1C1C1C;
+    color: #fff;
+    margin-bottom: 10px;
+    border: 0px;
+    width: 261px;
+    height: 33px;
+    border-radius: 8px;
+}
+
+.input-col-2 > input {
+    background: #1C1C1C;
+    color: #fff;
+    margin-bottom: 10px;
+    border: 0px;
+    width: 261px;
+    
+    border-radius: 8px;
+    
+}
+
+.input-col-1 > input::placeholder, .input-col-2 > input::placeholder{
+    color: #fff;
+}
+
+.input-col-2{
+    background: #1C1C1C;
+    border-radius: 8px;
+    height: 119px;
+}
+
+.input-message{
+    width: 261px;
+    height: 60px;
+}
+
+.submit-btn{
+    float:right;
+    width: 82px;
+    height: 30px;
+    border-radius: 4px;
+    border: 0px;
+    margin-bottom: 14px !important;
+    margin-right: 19px;
+}

@@ -54,6 +54,7 @@
 @media screen and (max-width: 560px) {
 
     .navbar{
+        top: 0;
         height: 64px;
         width: 100%;
         position:fixed;
