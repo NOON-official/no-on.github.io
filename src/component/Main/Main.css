@@ -82,6 +82,7 @@
 @media screen and (max-width: 560px){
     .main-container{
         margin-top: 10px;
+        border-bottom: 0px;
     }
 
     .image-container{
