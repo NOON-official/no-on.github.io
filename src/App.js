@@ -4,6 +4,7 @@ import About from './component/About/About';
 import Footer from "./component/Footer/Footer";
 import Contact from './component/Contact/Contact';
 import Service from './component/Service/Service';
+import Bringcon from './component/Service/Bringcon';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path="/about" exact component={About}/>
         <Route path="/contact" exact component={Contact}/>
         <Route path="/services" exact component={Service}/>
+        <Route path="/bringcon" exact component={Bringcon}/>
       </Switch>
       <Footer/>
     </Router>
