@@ -6,6 +6,10 @@ import './Service.css';
 import '../../App.css';
 
 function Service() {
+    const openBringcon = () => {
+        window.open('/bringcon');
+    }
+
     return (
         <>
             <div className="bringcon-container">
@@ -17,7 +21,10 @@ function Service() {
                     <br/>
                     <h2>유튜브 동영상 콘텐츠 저작권 거래 플랫폼</h2>
                     <br/>
-                    <button className="bringcon-more-btn">더 알아보기</button>
+                    <button className="bringcon-more-btn"
+                    onClick = {openBringcon}>
+                        더 알아보기
+                    </button>
                 </div>
                 <div className="ufo">
                     <img src={UFO}/>

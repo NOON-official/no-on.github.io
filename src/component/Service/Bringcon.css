@@ -1,0 +1,52 @@
+.bringcon-info-container{
+    background-color: #1C1C1C;
+    background-image: url('../images/background_Bringcon.svg');
+    min-height: 120vh;
+    top: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bringcon-logo-container{
+    width: 90%;
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.bringcon-logo{
+    width: 775.99px;
+}
+
+.bringcon-logo-container > h2 {
+    font-size: 28px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 33.6px;
+    margin-top: 93.95px;
+    margin-bottom: 48.64px;
+}
+
+.bringcon-link-btn{
+    background: #ffcb39;
+    width: 297px;
+    height: 41px;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 50%;
+    border: 0px;
+    border-radius: 33px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.bringcon-link-btn:hover{
+    cursor: pointer;
+}
+
+.bringcon-link-btn > img{
+    width: 143.3px;
+    margin-right: 22px;
+}
