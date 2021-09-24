@@ -1,0 +1,63 @@
+*{
+    font-family: 'Pretendard';
+}
+
+.bringcon-container{
+    background: #1C1C1C;
+    height: 80vh;
+    background-image: url('../images/background_Bringcon.svg');
+    justify-content: center;
+    text-align: center;
+    padding-top: 64px;
+    display:flex;
+    flex-direction: row;
+}
+
+.bringcon-info{
+    height: auto;
+    width: 70%;
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+}
+.bringcon-info > img{
+    width: 70%;
+}
+
+.bringcon-info > h2{
+    color: #fff;
+    margin-top: 0;
+    font-size: 28px;
+}
+.bringcon-more-btn{
+    background: #ffcb39;
+    color: #1C1C1C;
+    font-weight: 900;
+    border: none;
+    padding: 10px;
+    width: 120px;
+    border-radius: 12px;
+    font-size: 16px;
+}
+
+.bringcon-more-btn:hover{
+    cursor: pointer;
+}
+
+.ufo, .planet{
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.planet{
+    top: 60%;
+    left: 5%;
+    transform: rotate(15deg);
+}
+
+.ufo{
+    right: 5%;
+    top: 10%;
+    transform: rotate(345deg);
+}
