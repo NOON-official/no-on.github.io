@@ -88,3 +88,7 @@
     margin-bottom: 14px !important;
     margin-right: 19px;
 }
+
+.submit-btn:hover{
+    cursor: pointer;
+}

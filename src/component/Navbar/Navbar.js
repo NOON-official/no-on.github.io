@@ -14,21 +14,27 @@ function NavBar(){
 
     const onMouseEnter = () => {
         if(window.innerWidth < 960) {
-            setDropdown(false)
+            setDropdown(false);
         } else {
-            setDropdown(true)
+            setDropdown(true);
         }
     };
 
     const onMouseLeave = () => {
         if(window.innerWidth < 960) {
-            setDropdown(false)
+            setDropdown(false);
         } else {
-            setDropdown(false)
+            setDropdown(false);
         }
     };
 
-
+    const showDropdown = () => {
+        if (setDropdown == false) {
+            setDropdown(true);
+        } else {
+            setDropdown(false);
+        }
+    }
 
     return (
         <>
@@ -49,9 +55,11 @@ function NavBar(){
                 </li>
                 <li className="nav-item"
                     onMouseEnter={onMouseEnter}
-                    onMouseLeave={onMouseLeave}
+                    onClick={showDropdown}
                 >
-                    <Link to="/services" className="nav-links" onClick={closeMobileMenu}>
+                    <Link to="/services"
+                        className="nav-links"
+                        onClick={closeMobileMenu}>
                         SERVICE <i className="fas fa-caret-down"/>
                     </Link>
                     {dropdown && <Dropdown/>}
