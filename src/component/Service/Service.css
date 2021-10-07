@@ -62,8 +62,29 @@
     transform: rotate(345deg);
 }
 
+.mobile{
+    display: none;
+}
+
 @media screen and (max-width: 768px){
     .bringcon-info > h2 {
         font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .mobile{
+        display: block;
+    }
+    .bringcon-container{
+        height: 80vh;
+    }
+
+    .bringcon-info > img {
+        width: 240px;
+    }
+
+    .bringcon-info > h2 {
+        font-size: 20px;
     }
 }

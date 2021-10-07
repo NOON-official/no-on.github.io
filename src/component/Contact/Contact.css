@@ -92,3 +92,40 @@
 .submit-btn:hover{
     cursor: pointer;
 }
+
+@media screen and (max-width: 560px) {
+    .contact-container {
+        height: 100vh;
+        background-color: #fff;
+    }
+
+    .contact-symbol{
+        width: 68px;
+    }
+
+    .contact-logo {
+        width: 68px;
+        margin-bottom: 49px;
+    }
+
+    .contact-form {
+        display: inline-block !important;
+    }
+
+    .input {
+        width: 261px;
+    }
+
+    .input-message{
+        width: 240px !important;
+    }
+
+    .input-col-1 > input {
+        width: 259.9px;
+    }
+
+    .input-col-1, .input-col-2 {
+        width: 261px;
+        margin: auto;
+    }
+}

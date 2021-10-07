@@ -131,7 +131,7 @@ body{
     line-height: 2;
 }
 
-.ipad{
+.ipad, .mobile{
     display: none;
 }
 
@@ -189,5 +189,44 @@ body{
 
     .ipad{
         display: block !important;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .pc, .ipad{
+        display: none;
+    }
+    .mobile{
+        display: block !important;
+    }
+
+    .bringcon-logo {
+        width: 350px;
+    }
+
+    .bringcon-logo-container > h2 {
+        font-size: 1.2em;
+        margin-top: 57px;
+    }
+
+    .planet-container {
+        display: inline-block;
+    }
+
+    .bringcon-strong-1, .bringcon-strong-2, .bringcon-strong-3 {
+        padding: 30px;
+        width: 100%;
+    }
+
+    .bringcon-strong-1 {
+        float: left;
+    }
+
+    .bringcon-strong-3 {
+        justify-content: start;
+    }
+
+    .notice-container{
+        padding-bottom:0;
     }
 }

@@ -75,6 +75,10 @@
     line-height: 35px;
 }
 
+.mobile{
+    display: none;
+}
+
 @media screen and (max-width: 768px){
     .value-text, .invest-text, .start-up-text{
         margin-left: 84px;
@@ -86,5 +90,86 @@
     .start-up-text{
         text-align: left;
         margin-right: 84px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .about-container{
+        width: 100%;
+    }
+
+    .vision-container{
+        display:inline-block;
+        padding-top: 60px;
+    }
+
+    .symbol{
+        order: 1;
+        width: 100vw;
+        text-align: center;
+        align-content: center;
+    }
+
+    .symbol > img {
+        width: 130px;
+        margin: 0;
+    }
+
+    .vision-text > h2 {
+        font-size: 24px;
+        margin-left: 18px;
+        margin-right: 0;
+        width: 100%;
+        padding-top: 60px;
+    }
+
+    .our-vision{
+        margin-left: 18px;
+        font-size: 15px;
+    }
+
+    .value-container {
+        padding: 18px;
+    }
+
+    .value-text, .start-up-text, .invest-text{
+        margin: 0;
+    }
+
+    .our-value {
+        font-size: 15px;
+    }
+
+    .start-up-container{
+        height: 70vh;
+        padding: 18px;
+    }
+
+    .start-up-text {
+        margin-right: 0;
+    }
+
+    .start-up-text > h2{
+        font-size: 30px;
+    }
+
+    .our-career {
+        font-size: 15px;
+    }
+
+    .invest-container {
+        padding: 18px;
+    }
+
+    .invest-text > h2 {
+        font-size: 30px;
+    }
+
+    .our-invest{
+        font-size: 15px;
+    }
+
+    .mobile {
+        display: block;
     }
 }

@@ -31,20 +31,23 @@ function About() {
             </div>
             <div className="start-up-container">
                 <div className="start-up-text">
-                    <h2><strong>NO:ON</strong>의 Start-up Accelerating</h2>
+                    <h2><strong>NO:ON</strong>의 <br className="mobile"/> Start-up Accelerating</h2>
                     <p className="our-career">
-                        노온은 빅데이터를 활용한 자가용 광고판 사업, 메타버스를 활용한 역사 교육 서비스, <br/>
-                        재창업을 위한 중고 사무용 가구 플랫폼, 은퇴자와 청년들의 멘토링 매칭 서비스 등<br/>
+                        노온은 빅데이터를 활용한 자가용 광고판 사업, <br className="mobile"/>
+                        메타버스를 활용한 역사 교육 서비스, <br/>
+                        재창업을 위한 중고 사무용 가구 플랫폼, <br className="mobile"/>
+                        은퇴자와 청년들의 멘토링 매칭 서비스 등<br/>
                         다양한 사업을 Accelerating 중입니다.
                     </p>
                 </div>
             </div>
             <div className="invest-container">
                 <div className="invest-text">
-                    <h2><strong>NO:ON</strong>의 Venture Capital &#38; Investing</h2>
+                    <h2><strong>NO:ON</strong>의 <br className="mobile"/> Venture Capital &#38; Investing</h2>
                     <p className="our-invest">
                         노온은 현재 다양한 기업에 투자를 계획하고 있으며, <br/>
-                        최종적으로 스타트업과 여러 상장기업의 지주회사를 목표로 하고 있습니다.<br/>
+                        최종적으로 스타트업과 여러 상장기업의 <br className="mobile"/>
+                        지주회사를 목표로 하고 있습니다.<br/>
                     </p>
                 </div>
             </div>
