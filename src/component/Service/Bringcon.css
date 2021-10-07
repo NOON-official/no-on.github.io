@@ -128,4 +128,66 @@ body{
 .notice-1 p, .notice-2 p, .notice-3 p, .notice-4 p {
     font-size: 18px;
     font-weight: 400;
+    line-height: 2;
+}
+
+.ipad{
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+
+    .bringcon-logo{
+        width: 493.99px;
+        top: 76px;
+    }
+
+    .bringcon-logo-container > h2 {
+        font-size: 28px;
+        font-weight: 400;
+        color: #fff;
+        line-height: 33.6px;
+        margin-top: 78px;
+        margin-bottom: 25px;
+    }
+
+    .planet-container{
+        margin-top: 100px;
+    }
+
+    .bringcon-strong-1 p, .bringcon-strong-2 p, .bringcon-strong-3 p{
+        min-width: 220px;
+    }
+
+    .bringcon-strong-1{
+        margin-right: 100px;
+    }
+
+    .rainbow {
+        width: 100%;
+    }
+
+    .notice-container{
+        display: inline-block;
+        width: 90%;
+    }
+
+    .notice-1 h2 br, .notice-2 h2 br, .notice-3 h2 br, .notice-4 h2 br {
+        display: none;
+    }
+
+    .notice-1, .notice-2, .notice-3, .notice-4 {
+        padding-bottom: 110px;
+    }
+
+    .pc{
+        display: none;
+    }
+
+    .ipad{
+        display: block !important;
+    }
 }
