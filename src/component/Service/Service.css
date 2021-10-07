@@ -61,3 +61,9 @@
     top: 10%;
     transform: rotate(345deg);
 }
+
+@media screen and (max-width: 768px){
+    .bringcon-info > h2 {
+        font-size: 24px;
+    }
+}
