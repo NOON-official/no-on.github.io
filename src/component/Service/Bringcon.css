@@ -131,6 +131,10 @@ body{
     line-height: 2;
 }
 
+.pc{
+    display: block !important;
+}
+
 .ipad, .mobile{
     display: none;
 }
