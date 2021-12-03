@@ -93,6 +93,10 @@
     cursor: pointer;
 }
 
+#email {
+    font-size: 30px;
+}
+
 @media screen and (max-width: 560px) {
     .contact-container {
         height: 100vh;
